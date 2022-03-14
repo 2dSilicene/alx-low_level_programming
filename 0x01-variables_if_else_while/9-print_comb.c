@@ -6,23 +6,16 @@
  */
 int main(void)
 {
-    char ch = 'a';
-    int i = 0;
     
-	while (i < 16)
+	for (int i = 0; i <= 9; i++)
 	{
-		if (i < 10)
-		{
-			putchar(i + '0');
+		putchar(i + '0');
+		if (i != 9) {
+		    putchar(',');
+		    putchar(' ');
 		}
-		else
-		{
-		    putchar(ch);
-		    ch++;
-		}
-		i++;
 	}
 	putchar('\n');
+
     return 0;
 }
-
