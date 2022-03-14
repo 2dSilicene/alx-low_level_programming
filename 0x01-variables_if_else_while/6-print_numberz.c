@@ -1,16 +1,21 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
+ * main - entry point
  *
- * Return: 0 on success. Error code otherwise
+ * Description: print all single decimal numbers starting from 0
+ *
+ * Return: returns 0
  */
+
 int main(void)
 {
-    
-	for (int i = 0; i <= 9; i++)
-	{
-		putchar(i + '0');
-	}
+	int x;
+
+	do {
+		putchar(x + '0');
+		x++;
+	} while (x <= 9);
 	putchar('\n');
-	return 0;
+	return (0);
 }

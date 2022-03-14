@@ -1,21 +1,26 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
+ * main - entry
  *
- * Return: 0 on success. Error code otherwise
+ * Description: print all possible combination of a single digit
+ *
+ * Return: 0
  */
+
 int main(void)
 {
-    
-	for (int i = 0; i <= 9; i++)
+	int x;
+
+	for (x = 0; x < 10; x++)
 	{
-		putchar(i + '0');
-		if (i != 9) {
-		    putchar(',');
-		    putchar(' ');
+		putchar(x + '0');
+		if (x < 9)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
-
-    return 0;
+	return (0);
 }

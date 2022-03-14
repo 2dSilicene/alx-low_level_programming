@@ -1,28 +1,26 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
+ * main - program entry
  *
- * Return: 0 on success. Error code otherwise
+ * Description: print hex values using putchar()
+ *
+ * Return: 0
  */
+
 int main(void)
 {
-    char ch = 'a';
-    int i = 0;
-    
-	while (i < 16)
+	int i;
+	char d;
+
+	for (i = 0; i < 10; i++)
 	{
-		if (i < 10)
-		{
-			putchar(i + '0');
-		}
-		else
-		{
-		    putchar(ch);
-		    ch++;
-		}
-		i++;
+		putchar(i + '0');
+	}
+	for (d = 'a'; d <= 'f'; d++)
+	{
+		putchar(d);
 	}
 	putchar('\n');
-    return 0;
+	return (0);
 }
-

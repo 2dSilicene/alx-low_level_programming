@@ -1,26 +1,40 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
+ * main - entry
  *
- * Return: 0 on success. Error code otherwise
+ * Description: print all possible combo of two digits
+ *
+ * Return: 0
  */
+
 int main(void)
 {
-    
-	for (int i = 0; i <= 9; i++)
-	{
-	    for (int j = i + 1; j <= 9; j++)
-	    {
-	        putchar(i + '0');
-	        putchar(j + '0');
-	        if (((i * 10) + j) < 89)
-	        {
-	            putchar(',');
-                putchar(' ');
+	int x;
+	int y;
+	int z;
 
-	        }
-	    }
+	x  = 0;
+
+	while (x < 100)
+	{
+		y = x / 10; /* tens */
+		z = x % 10; /* unit */
+
+		if (y < z)
+		{
+			putchar(y + '0');
+			putchar(z + '0');
+
+			if (x < 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+
+		x++;
 	}
 	putchar('\n');
-    return 0;
+	return (0);
 }

@@ -1,21 +1,27 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
+ * main - entry point
  *
- * Return: 0 on success. Error code otherwise
+ * Description: Print all letters of the alphabets except q and e
+ *
+ * Return: return 0 (Success)
  */
+
 int main(void)
 {
-    char ch = 'a';
-	while(ch <= 'z')
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (ch != 'e' && ch != 'q')
+		if (ch != 'q' && ch != 'e')
 		{
 			putchar(ch);
 		}
-		ch++;
+		else
+		{
+		}
 	}
 	putchar('\n');
-
-    return 0;
+	return (0);
 }

@@ -1,17 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
+ * main - entry
  *
- * Return: 0 on success. Error code otherwise
+ * Description: print lowercase alphabets in reverse and a newline
+ *
+ * Return: returns 0
  */
+
 int main(void)
 {
-	char ch ='z';
-	while(ch >= 'a')
-	{
+	char ch;
+
+	ch = 'z';
+
+	do {
 		putchar(ch);
 		ch--;
-	}
+	} while (ch >= 'a');
 	putchar('\n');
-	return 0;
+	return (0);
 }
