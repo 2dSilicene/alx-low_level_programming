@@ -4,9 +4,9 @@
  *
  * Return: 0 on success. Error code otherwise
  */
-int main()
+int main(void)
 {
-    int a, b, c;
+        int a, b, c;
     
 	for (int i = 0; i <= 9; i++)
 	{
